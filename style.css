@@ -1,0 +1,60 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,0,63,1) 0%, rgba(0,230,167,1) 0%, rgba(20,188,209,1) 100%, rgba(29,168,229,1) 100%, rgba(145,162,249,1) 100%, rgba(0,212,255,1) 100%);
+}
+body{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,0,63,1) 0%, rgba(0,230,167,1) 0%, rgba(20,188,209,1) 100%, rgba(29,168,229,1) 100%, rgba(145,162,249,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.form-control {
+	width: 250px;
+}
+
+.a{
+  text-align: center;
+
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
